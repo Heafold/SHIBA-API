@@ -1,0 +1,52 @@
+body{
+    background-color: #deb762;
+}
+
+.container{
+    border: 5px solid white;
+    border-radius: 2%;
+    margin: auto;
+    margin-top: 2%;
+    width: 66%;
+    height: 800px;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    text-decoration: overline;
+}
+
+#imageShib{
+    background-color: white;
+    margin: auto;
+    width: 66%;
+    height: 450px;
+    border-radius: 2%;
+    background-size: cover;
+}
+
+#randomButton{
+    text-align: center;
+    font-size: 30px;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 5%;
+    color: #deb762;
+    border-radius: 20px;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+#randomButton:hover{
+    width: 252px ;
+    height: 52px ;
+    padding-top: 15px;
+    background-color: #deb762;
+    border: 3px solid white;
+    color: white;
+}
