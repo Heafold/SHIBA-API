@@ -1,5 +1,10 @@
 body{
-    background-color: #deb762;
+    background-color: #fec724;
+}
+
+.buttondiv{
+    display: flex;
+    margin-top: 3%;
 }
 
 .container{
@@ -19,12 +24,14 @@ body{
 }
 
 #imageShib{
-    background-color: white;
+    background-color: #fec724;
     margin: auto;
     width: 66%;
     height: 450px;
     border-radius: 2%;
     background-size: cover;
+    background-position: 10%;
+    background-image: url('https://s.yimg.com/ny/api/res/1.2/kwUySU9SFW2HWD8YOnO1lQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM1Mg--/https://media.zenfs.com/en/investorplace_417/6547c6454ca0f10863600fc11f05832d');
 }
 
 #randomButton{
@@ -35,7 +42,6 @@ body{
     background-color: white;
     padding-top: 10px;
     margin: auto;
-    margin-top: 5%;
     color: #deb762;
     border-radius: 20px;
     transition-duration: 400ms;
@@ -46,7 +52,37 @@ body{
     width: 252px ;
     height: 52px ;
     padding-top: 15px;
-    background-color: #deb762;
+    background-color: #4c5cc6;
+    border: 3px solid white;
+    color: white;
+}
+
+.divscore{
+    display: flex;
+    width: 5%;
+    margin: auto;
+    color: white;
+}
+
+#reset{
+    text-align: center;
+    font-size: 30px;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    padding-top: 10px;
+    margin: auto;
+    color: #deb762;
+    border-radius: 20px;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+#reset:hover{
+    width: 252px ;
+    height: 52px ;
+    padding-top: 15px;
+    background-color: #e44626;
     border: 3px solid white;
     color: white;
 }
