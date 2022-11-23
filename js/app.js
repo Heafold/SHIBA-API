@@ -3,7 +3,7 @@ import Request from "./class/Request.js";
 const random = document.getElementById('randomButton')
 const score = document.getElementById('score')
 const reset = document.getElementById('reset')
-let scoreNbr = 1
+let scoreNbr = 0
 score.innerHTML = scoreNbr
 random.addEventListener("click", newRequest)
 reset.addEventListener("click", resetPage)
