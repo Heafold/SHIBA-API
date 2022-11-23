@@ -1,7 +1,11 @@
 class Request {
     
-    ajax(){
-        const image = document.getElementById('imageShib')
+    constructor(img){
+        this.img = img
+    }
+
+    ShibaRequest(){
+        const img = this.img
         const fetchShiba = async() => {
             const response = await fetch('https://shibe.online/api/shibes')
             if(response.ok){
@@ -11,11 +15,12 @@ class Request {
 
         fetchShiba()
         .then(function(d){
-            image.style.backgroundImage = `url("${d}")`;
+            img.style.backgroundImage = `url("${d}")`;
         } )
         .catch(err => console.error(err))
         
     }
+
 
 }
 

@@ -1,22 +1,28 @@
 import Request from "./class/Request.js";
+import Function from "./class/Function.js"
 
-const random = document.getElementById('randomButton')
-const score = document.getElementById('score')
-const reset = document.getElementById('reset')
-let scoreNbr = 0
-score.innerHTML = scoreNbr
-random.addEventListener("click", newRequest)
-reset.addEventListener("click", resetPage)
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const random = document.getElementById('randomButton')
+    const image = document.getElementById('imageShib')
+    const score = document.getElementById('score')
+    const reset = document.getElementById('reset')
 
-function newRequest(){
-    scoreNbr = scoreNbr + 1
+    let scoreNbr = 0
     score.innerHTML = scoreNbr
-    const request = new Request
-    request.ajax()
-}
 
-function resetPage(){
-    location.reload()
-}
+    const request = new Request(image)
+    const funcction = new Function(scoreNbr, score, request, image)
+
+    random.addEventListener("click", () => {
+        funcction.newRequest()
+    })
+    reset.addEventListener("click", () => {
+        funcction.resetPage()
+    })
+
+})
+
+
 
 
